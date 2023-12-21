@@ -9,7 +9,7 @@ import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useEffect, useState } from "react";
 import { parseUnits } from "viem";
 import { useAccount, useNetwork, useSwitchNetwork, useWalletClient } from "wagmi";
-import { decodeSubscription, setChain, tokenDetails } from "zpayme-sdk";
+import { decodeSubscription, setChain, tokenDetails } from "zpayme";
 
 export default function Join({ params: { hash } }: { params: { hash: string } }) {
   const { chain } = useNetwork();

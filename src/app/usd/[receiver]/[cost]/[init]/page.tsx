@@ -5,7 +5,7 @@ import { shortenAddress } from "@/utils";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useEffect, useState } from "react";
 import { useAccount, useNetwork } from "wagmi";
-import { encodeSubscription, setChain } from "zpayme-sdk";
+import { encodeSubscription, setChain } from "zpayme";
 
 export default function Join({ params: { receiver, cost, init } }: { params: { receiver: string; cost: string; init: string } }) {
   const { chain } = useNetwork();
